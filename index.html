@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web components</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <h3>Hello World!</h3>
+    <div class="left-cta">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-comment"></i>
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+    </div>
+    <div class="right-cta">
+        <i class="fa-regular fa-bookmark"></i>
+    </div>
+ 
+    <user-card name="Arthur Morgan" avatar="https://randomuser.me/api/portraits/men/1.jpg" username="Uniface WC" followers="1.2M followers" buttontxt="Follow" card-cover="https://images.unsplash.com/photo-1519865885898-a54a6f2c7eea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=758&q=80" likes="380 Likes" body-heading="Uniface WC - <span>The component library you always wanted</span></h4>" posted-date="2 days ago" view-comment="view all 180 comments" >
+            <div slot="username">Uniface WC</div>
+            <div slot="followers">1.2M followers</div>
+            <div slot="buttontxt">Follow</div>
+            <div slot="likes">380 Likes</div>
+            <div slot="body-heading">Uniface WC - <span>The component library you always wanted</span></h4></div>
+            <div slot="posted-date">2 days ago</div>
+            <div slot="view-comment">view all 180 comments</div>
+    </user-card>
+    
+
+    <script src="userCard.js"></script>
+</body>
+</html>
